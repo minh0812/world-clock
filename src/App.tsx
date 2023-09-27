@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Clock from "./components/Clock";
-import { Avatar, Select, Button } from "antd";
+import { Avatar, Select, Button, message } from "antd";
 import { ClockCircleFilled } from "@ant-design/icons";
 import "./App.scss";
 
@@ -127,7 +127,9 @@ function App() {
   };
 
   const addClock = (UCT: string) => {
-    if (clocks.includes(+UCT.split("UTC")[1].split(":")[0])) return;
+    if (clocks.includes(+UCT.split("UTC")[1].split(":")[0])) {
+      return message.error("This clock already exists");
+    }
     if (UCT === "") return;
     const clock = +UCT.split("UTC")[1].split(":")[0];
     const newClocks = [...clocks, clock];
@@ -165,7 +167,16 @@ function App() {
             placeholder="Search location"
             optionFilterProp="children"
             filterOption={(input, option) =>
-              (option?.label ?? "").toLowerCase().includes(input)
+              (option?.label ?? "")
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .includes(
+                  input
+                    .toLowerCase()
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                )
             }
             filterSort={(optionA, optionB) =>
               (optionA?.label ?? "")
