@@ -146,11 +146,10 @@
       font-size: var(--tiny-font-size);
       color: var(--title-color);
       font-weight: var(--font-medium);
-      text-align: right;
       position: absolute;
-      bottom: -0.25rem;
-      right: 50%;
-      transform: translateX(50%);
+      top: 50%;
+      right: 1.5rem;
+      transform: translateY(-50%);
     }
   }
   &__date {

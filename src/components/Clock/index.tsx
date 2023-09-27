@@ -84,10 +84,6 @@ const Clock: React.FC<{
           <div className="clock__text-minutes">
             {minutes >= 10 ? minutes : `0${minutes}`}
           </div>
-          <div className="clock__text-dot">:</div>
-          <div className="clock__text-seconds">
-            {seconds >= 10 ? seconds : `0${seconds}`}
-          </div>
           <div className="clock__text-ampm">{amPm}</div>
         </div>
 
