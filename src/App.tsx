@@ -213,6 +213,7 @@ function App() {
     const newClocks = [...clocks, { UCT, location }];
     localStorage.setItem("clocks", JSON.stringify(newClocks));
     setClocks(newClocks);
+    return message.success("Add clock success");
   };
 
   const removeClock = (location: string) => {
