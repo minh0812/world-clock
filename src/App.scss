@@ -56,6 +56,10 @@ main {
           }
         }
       }
+      .ant-select-arrow {
+        color: var(--text-color);
+        font-size: 0.75rem;
+      }
       .ant-select-selection-placeholder {
         color: var(--text-color);
       }
@@ -64,12 +68,20 @@ main {
       }
     }
   }
+
   .clocks {
     max-width: 1024px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+  }
+}
+
+.ant-select-dropdown {
+  background-color: var(--body-color);
+  .ant-select-item-option-content {
+    color: var(--text-color);
   }
 }
 
