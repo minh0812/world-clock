@@ -257,7 +257,7 @@ function App() {
         </div>
         <div className="theme">
           {
-            <Tooltip title="Light/Dark theme" placement="left">
+            <Tooltip title="Light/Dark theme" color="var(--first-color)" placement="left">
               {theme === "light" ? (
                 <i
                   className="ri-sun-line"
@@ -314,7 +314,7 @@ function App() {
               label: city.label + " " + city.value.UCT,
             }))}
           />
-          <Tooltip title="Add clock" placement="top">
+          <Tooltip color="var(--first-color)" title="Add clock" placement="top">
             <Button
               type="primary"
               className="search-location__add"

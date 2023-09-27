@@ -43,7 +43,7 @@ main {
       height: 3rem;
       text-transform: uppercase;
       font-size: 1rem;
-      .anticon {
+      &:disabled{
         color: var(--text-color);
       }
     }

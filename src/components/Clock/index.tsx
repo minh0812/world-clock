@@ -38,7 +38,8 @@ const Clock: React.FC<{
         const date = new Date();
         const GMT = date.getTime() + date.getTimezoneOffset() * 60000;
         const newDate = new Date(
-          GMT + 3600000 * +UCT.split(" ")[0].replaceAll("0", "").replaceAll(":", "")
+          GMT +
+            3600000 * +UCT.split(" ")[0].replaceAll("0", "").replaceAll(":", "")
         );
         getTime(newDate);
       }, 1000);
@@ -48,7 +49,7 @@ const Clock: React.FC<{
 
   return (
     <div className="clock">
-      <Tooltip title="Remove clock" placement="top">
+      <Tooltip color="var(--first-color)" title="Remove clock" placement="top">
         <CloseCircleOutlined
           className="icon-close"
           onClick={() => removeClock(location as string)}
