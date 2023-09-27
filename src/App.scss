@@ -1,12 +1,29 @@
 header {
-  color: var(--title-color);
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.25rem;
-  h1 {
-    font-size: var(--medium-font-size);
-    font-weight: var(--font-medium);
-    margin-inline: 0.25rem;
+  padding: 1rem;
+  .logo {
+    color: var(--title-color);
+    display: flex;
+    align-items: center;
+    padding: 0.25rem;
+    gap: 0.5rem;
+    h1 {
+      font-size: var(--medium-font-size);
+      font-weight: var(--font-medium);
+      margin-inline: 0.25rem;
+    }
+  }
+  .theme {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    i {
+      font-size: 2rem;
+      color: var(--title-color);
+    }
   }
 }
 
@@ -26,6 +43,20 @@ main {
       height: 3rem;
       text-transform: uppercase;
       font-size: 1rem;
+      .anticon {
+        color: var(--text-color);
+      }
+    }
+    .ant-select {
+      .ant-select-selector {
+        background-color: var(--body-color);
+      }
+      .ant-select-selection-placeholder {
+        color: var(--text-color);
+      }
+      .ant-select-selection-item {
+        color: var(--text-color);
+      }
     }
   }
   .clocks {

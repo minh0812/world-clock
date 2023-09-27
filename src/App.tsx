@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 import Clock from "./components/Clock";
 import { Avatar, Select, Button, message, Tooltip } from "antd";
 import { ClockCircleFilled, PlusOutlined } from "@ant-design/icons";
+import sun from "./assets/icon/sun-line.svg";
+import moon from "./assets/icon/moon-line.svg";
 import "./App.scss";
 
 function App() {
   const [clocks, setClocks] = useState<{ UCT: string; location: string }[]>([]);
   const [UCT, setUCT] = useState<{ UCT: string; location: string }>();
+  const [theme, setTheme] = useState("light");
   const cities = [
     {
       value: {
@@ -218,25 +221,69 @@ function App() {
     setClocks(newClocks);
   };
 
+  const getTheme = () => {
+    const isDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
+    isDarkTheme.addEventListener("change", () => {
+      if (isDarkTheme.matches) {
+        setTheme("dark");
+        document.body.classList.add("dark-theme");
+      } else {
+        setTheme("light");
+        document.body.classList.remove("dark-theme");
+      }
+    });
+    if (isDarkTheme.matches) {
+      setTheme("dark");
+      document.body.classList.add("dark-theme");
+    } else {
+      setTheme("light");
+      document.body.classList.remove("dark-theme");
+    }
+  };
   useEffect(() => {
     getClocks();
+    getTheme();
   }, []);
 
   return (
     <>
       <header>
-        <Avatar
-          icon={<ClockCircleFilled />}
-          style={{ backgroundColor: "var(--first-color)" }}
-        />
-        <h1>World Clock.</h1>
+        <div className="logo">
+          <Avatar
+            icon={<ClockCircleFilled />}
+            style={{ backgroundColor: "var(--first-color)" }}
+          />
+          <h1>World Clock.</h1>
+        </div>
+        <div className="theme">
+          {
+            <Tooltip title="Light/Dark theme" placement="left">
+              {theme === "light" ? (
+                <i
+                  className="ri-sun-line"
+                  onClick={() => {
+                    setTheme("dark");
+                    document.body.classList.add("dark-theme");
+                  }}
+                ></i>
+              ) : (
+                <i
+                  className="ri-moon-line"
+                  onClick={() => {
+                    setTheme("light");
+                    document.body.classList.remove("dark-theme");
+                  }}
+                ></i>
+              )}
+            </Tooltip>
+          }
+        </div>
       </header>
       <main>
         <div className="search-location">
           <Select
             showSearch
-            allowClear
-            style={{ width: "100%", height: "3rem" }}
+            style={{ width: "100%", height: "3rem", background: "back"}}
             placeholder="Search location"
             optionFilterProp="children"
             filterOption={(input, option) =>
@@ -258,10 +305,9 @@ function App() {
             }
             onChange={(value) =>
               setUCT({
-                UCT: value.split(" ").slice(-1)[0],
-                location: value.split(" ").slice(0, -1).join(" "),
+                UCT: value?.split(" ").slice(-1)[0],
+                location: value?.split(" ").slice(0, -1).join(" "),
               })
-          
             }
             options={cities.map((city) => ({
               value: city.value.location + " " + city.value.UCT,
