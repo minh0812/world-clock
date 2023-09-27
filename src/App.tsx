@@ -1,111 +1,186 @@
 import React, { useState, useEffect } from "react";
 import Clock from "./components/Clock";
-import { Avatar, Select, Button, message } from "antd";
-import { ClockCircleFilled } from "@ant-design/icons";
+import { Avatar, Select, Button, message, Tooltip } from "antd";
+import { ClockCircleFilled, PlusOutlined } from "@ant-design/icons";
 import "./App.scss";
 
 function App() {
-  const [clocks, setClocks] = useState<number[]>([]);
-  const [UCT, setUCT] = useState("");
+  const [clocks, setClocks] = useState<{ UCT: string; location: string }[]>([]);
+  const [UCT, setUCT] = useState<{ UCT: string; location: string }>();
   const cities = [
     {
-      value: "UTC+00:00",
+      value: {
+        UCT: "+00:00",
+        location: "Luân Đôn, Vương quốc Anh",
+      },
       label: "Luân Đôn, Vương quốc Anh",
     },
     {
-      value: "UTC+01:00",
+      value: {
+        UCT: "+01:00",
+        location: "Paris, Pháp",
+      },
       label: "Paris, Pháp",
     },
     {
-      value: "UTC+02:00",
+      value: {
+        UCT: "+02:00",
+        location: "Berlin, Đức",
+      },
       label: "Berlin, Đức",
     },
     {
-      value: "UTC+03:00",
+      value: {
+        UCT: "+03:00",
+        location: "Moskva, Nga",
+      },
       label: "Moskva, Nga",
     },
     {
-      value: "UTC+04:00",
+      value: {
+        UCT: "+04:00",
+        location: "Thượng Hải, Trung Quốc",
+      },
       label: "Thượng Hải, Trung Quốc",
     },
     {
-      value: "UTC+05:00",
+      value: {
+        UCT: "+05:00",
+        location: "New Delhi, Ấn Độ",
+      },
       label: "New Delhi, Ấn Độ",
     },
     {
-      value: "UTC+06:00",
+      value: {
+        UCT: "+06:00",
+        location: "Bangkok, Thái Lan",
+      },
       label: "Bangkok, Thái Lan",
     },
     {
-      value: "UTC+07:00",
+      value: {
+        UCT: "+07:00",
+        location: "Hà Nội, Việt Nam",
+      },
       label: "Hà Nội, Việt Nam",
     },
     {
-      value: "UTC+08:00",
+      value: {
+        UCT: "+08:00",
+        location: "Bắc Kinh, Trung Quốc",
+      },
       label: "Bắc Kinh, Trung Quốc",
     },
     {
-      value: "UTC+09:00",
+      value: {
+        UCT: "+09:00",
+        location: "Tokyo, Nhật Bản",
+      },
       label: "Tokyo, Nhật Bản",
     },
     {
-      value: "UTC+10:00",
+      value: {
+        UCT: "+10:00",
+        location: "Sydney, Úc",
+      },
       label: "Sydney, Úc",
     },
     {
-      value: "UTC+11:00",
+      value: {
+        UCT: "+11:00",
+        location: "Thái Bình Dương, New Zealand",
+      },
       label: "Thái Bình Dương, New Zealand",
     },
     {
-      value: "UTC+12:00",
+      value: {
+        UCT: "+12:00",
+        location: "Auckland, New Zealand",
+      },
       label: "Auckland, New Zealand",
     },
     {
-      value: "UTC-01:00",
+      value: {
+        UCT: "-01:00",
+        location: "Lisbon, Bồ Đào Nha",
+      },
       label: "Lisbon, Bồ Đào Nha",
     },
     {
-      value: "UTC-02:00",
+      value: {
+        UCT: "-02:00",
+        location: "Rio de Janeiro, Brazil",
+      },
       label: "Buenos Aires, Argentina",
     },
     {
-      value: "UTC-03:00",
+      value: {
+        UCT: "-03:00",
+        location: "Rio de Janeiro, Brazil",
+      },
       label: "Rio de Janeiro, Brazil",
     },
     {
-      value: "UTC-04:00",
+      value: {
+        UCT: "-04:00",
+        location: "New York, Hoa Kỳ",
+      },
       label: "New York, Hoa Kỳ",
     },
     {
-      value: "UTC-05:00",
+      value: {
+        UCT: "-05:00",
+        location: "Chicago, Hoa Kỳ",
+      },
       label: "Chicago, Hoa Kỳ",
     },
     {
-      value: "UTC-06:00",
+      value: {
+        UCT: "-06:00",
+        location: "Mexico City, Mexico",
+      },
       label: "Mexico City, Mexico",
     },
     {
-      value: "UTC-07:00",
+      value: {
+        UCT: "-07:00",
+        location: "Los Angeles, Hoa Kỳ",
+      },
       label: "Los Angeles, Hoa Kỳ",
     },
     {
-      value: "UTC-08:00",
+      value: {
+        UCT: "-08:00",
+        location: "Vancouver, Canada",
+      },
       label: "Vancouver, Canada",
     },
     {
-      value: "UTC-09:00",
+      value: {
+        UCT: "-09:00",
+        location: "Honolulu, Hoa Kỳ",
+      },
       label: "Honolulu, Hoa Kỳ",
     },
     {
-      value: "UTC-10:00",
+      value: {
+        UCT: "-10:00",
+        location: "Sydney, Úc",
+      },
       label: "Sydney, Úc",
     },
     {
-      value: "UTC-11:00",
+      value: {
+        UCT: "-11:00",
+        location: "Fiji",
+      },
       label: "Fiji",
     },
     {
-      value: "UTC-12:00",
+      value: {
+        UCT: "-12:00",
+        location: "Auckland, New Zealand",
+      },
       label: "Auckland, New Zealand",
     },
   ];
@@ -116,34 +191,31 @@ function App() {
       setClocks(clocks);
     } else {
       let date = new Date();
-      let GMT = +date
-        .toString()
-        .split("GMT")[1]
-        .split(" ")[0]
-        .replaceAll("0", "");
-      localStorage.setItem("clocks", JSON.stringify([GMT]));
-      setClocks([GMT]);
+      let GMT = date.toString().split("GMT")[1].split(" ")[0];
+      GMT = GMT.slice(0, 3) + ":" + GMT.slice(3);
+
+      localStorage.setItem(
+        "clocks",
+        JSON.stringify([{ UCT: GMT, location: "Current" }])
+      );
+      setClocks([{ UCT: GMT, location: "Current" }]);
     }
   };
 
-  const addClock = (UCT: string) => {
-    if (clocks.includes(+UCT.split("UTC")[1].split(":")[0])) {
+  const addClock = (UCT: string, location: string) => {
+    if (clocks.find((item) => item.location === location)) {
       return message.error("This clock already exists");
     }
     if (UCT === "") return;
-    const clock = +UCT.split("UTC")[1].split(":")[0];
-    const newClocks = [...clocks, clock];
+    const newClocks = [...clocks, { UCT, location }];
     localStorage.setItem("clocks", JSON.stringify(newClocks));
     setClocks(newClocks);
   };
 
-  const removeClock = (UCT: number) => {
-    const clock = localStorage.getItem("clocks");
-    if (clock) {
-      const newClock = JSON.parse(clock).filter((item: number) => item !== UCT);
-      localStorage.setItem("clocks", JSON.stringify(newClock));
-      setClocks(newClock);
-    }
+  const removeClock = (location: string) => {
+    const newClocks = clocks.filter((clock) => clock.location !== location);
+    localStorage.setItem("clocks", JSON.stringify(newClocks));
+    setClocks(newClocks);
   };
 
   useEffect(() => {
@@ -163,7 +235,8 @@ function App() {
         <div className="search-location">
           <Select
             showSearch
-            style={{ width: "100%", height: "3rem", marginRight: "1rem" }}
+            allowClear
+            style={{ width: "100%", height: "3rem" }}
             placeholder="Search location"
             optionFilterProp="children"
             filterOption={(input, option) =>
@@ -183,23 +256,36 @@ function App() {
                 .toLowerCase()
                 .localeCompare((optionB?.label ?? "").toLowerCase())
             }
-            options={cities}
-            onChange={(value) => setUCT(value)}
+            onChange={(value) =>
+              setUCT({
+                UCT: value.split(" ").slice(-1)[0],
+                location: value.split(" ").slice(0, -1).join(" "),
+              })
+          
+            }
+            options={cities.map((city) => ({
+              value: city.value.location + " " + city.value.UCT,
+              label: city.label + " " + city.value.UCT,
+            }))}
           />
-          <Button
-            type="primary"
-            className="search-location__add"
-            onClick={() => addClock(UCT)}
-          >
-            Add
-          </Button>
+          <Tooltip title="Add clock" placement="top">
+            <Button
+              type="primary"
+              className="search-location__add"
+              disabled={UCT === undefined}
+              onClick={() => addClock(UCT?.UCT ?? "", UCT?.location ?? "")}
+            >
+              <PlusOutlined />
+            </Button>
+          </Tooltip>
         </div>
         <div className="clocks">
           {clocks.map((clock, index) => (
             <Clock
               key={index}
-              UCT={clock}
-              removeClock={() => removeClock(clock)}
+              UCT={clock.UCT}
+              location={clock.location}
+              removeClock={() => removeClock(clock.location)}
             />
           ))}
         </div>

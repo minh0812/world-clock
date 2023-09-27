@@ -4,9 +4,10 @@ import { CloseCircleOutlined } from "@ant-design/icons";
 import "./Clock.scss";
 
 const Clock: React.FC<{
-  UCT?: number;
-  removeClock: (UCT: number) => void;
-}> = ({ UCT, removeClock }) => {
+  UCT?: string;
+  location?: string;
+  removeClock: (location: string) => void;
+}> = ({ UCT, location, removeClock }) => {
   const [hour, setHour] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
@@ -36,7 +37,9 @@ const Clock: React.FC<{
       const interval = setInterval(() => {
         const date = new Date();
         const GMT = date.getTime() + date.getTimezoneOffset() * 60000;
-        const newDate = new Date(GMT + 3600000 * UCT);
+        const newDate = new Date(
+          GMT + 3600000 * +UCT.split(" ")[0].replaceAll("0", "").replaceAll(":", "")
+        );
         getTime(newDate);
       }, 1000);
       return () => clearInterval(interval);
@@ -48,15 +51,15 @@ const Clock: React.FC<{
       <Tooltip title="Remove clock" placement="top">
         <CloseCircleOutlined
           className="icon-close"
-          onClick={() => removeClock(UCT as number)}
+          onClick={() => removeClock(location as string)}
         />
       </Tooltip>
+
       <div className="clock__circle">
         <span className="clock__twelve"></span>
         <span className="clock__three"></span>
         <span className="clock__six"></span>
         <span className="clock__nine"></span>
-
         <div className="clock__rounder"></div>
         <div
           className="clock__hour"
@@ -74,24 +77,28 @@ const Clock: React.FC<{
 
       <div>
         <div className="clock__text">
-          <div className="clock__text-hour" id="text-hour">
-            {hour >= 10 ? hour : `0${hour}`}:
+          <div className="clock__text-hour">
+            {hour >= 10 ? hour : `0${hour}`}
           </div>
-          <div className="clock__text-minutes" id="text-minutes">
-            {minutes >= 10 ? minutes : `0${minutes}`}:
+          <div className="clock__text-dot">:</div>
+          <div className="clock__text-minutes">
+            {minutes >= 10 ? minutes : `0${minutes}`}
           </div>
-          <div className="clock__text-seconds" id="text-seconds">
+          <div className="clock__text-dot">:</div>
+          <div className="clock__text-seconds">
             {seconds >= 10 ? seconds : `0${seconds}`}
           </div>
-          <div className="clock__text-ampm" id="text-ampm">
-            {amPm}
-          </div>
+          <div className="clock__text-ampm">{amPm}</div>
         </div>
 
         <div className="clock__date">
           <span id="date-day">{day >= 10 ? day : `0${day}`}</span>
           <span id="date-month">{month}</span>
           <span id="date-year">{year >= 10 ? year : `0${year}`}</span>
+        </div>
+        <div className="clock__location">
+          {location?.split(",")[0] ?? "Local"}
+          (GMT {UCT?.split(" ")[0] ?? ""})
         </div>
       </div>
     </div>
