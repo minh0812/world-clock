@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Clock from "./components/Clock";
 import { Avatar, Select, Button, message, Tooltip } from "antd";
 import { ClockCircleFilled, PlusOutlined } from "@ant-design/icons";
-import sun from "./assets/icon/sun-line.svg";
-import moon from "./assets/icon/moon-line.svg";
 import "./App.scss";
 
 function App() {
