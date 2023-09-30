@@ -61,7 +61,7 @@ const Clock: React.FC<{
         <div className="clock__rounder"></div>
         <div
           className="clock__hour"
-          style={{ transform: `rotate(${hour * 30}deg)` }}
+          style={{ transform: `rotate(${hour * 30 + minutes * 0.5}deg)` }}
         ></div>
         <div
           className="clock__minutes"
