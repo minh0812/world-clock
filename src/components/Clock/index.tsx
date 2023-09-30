@@ -4,10 +4,10 @@ import { CloseCircleOutlined } from "@ant-design/icons";
 import "./Clock.scss";
 
 const Clock: React.FC<{
-  UCT?: string;
+  GMT?: string;
   location?: string;
   removeClock: (location: string) => void;
-}> = ({ UCT, location, removeClock }) => {
+}> = ({ GMT, location, removeClock }) => {
   const [hour, setHour] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
@@ -27,7 +27,7 @@ const Clock: React.FC<{
   };
 
   useEffect(() => {
-    if (!UCT) {
+    if (!GMT) {
       const interval = setInterval(() => {
         const date = new Date();
         getTime(date);
@@ -36,16 +36,13 @@ const Clock: React.FC<{
     } else {
       const interval = setInterval(() => {
         const date = new Date();
-        const GMT = date.getTime() + date.getTimezoneOffset() * 60000;
-        const newDate = new Date(
-          GMT +
-            3600000 * +UCT.split(" ")[0].replaceAll("0", "").replaceAll(":", "")
-        );
+        const UCT = date.getTime() + date.getTimezoneOffset() * 60000;
+        const newDate = new Date(UCT + 3600000 * +GMT);
         getTime(newDate);
       }, 1000);
       return () => clearInterval(interval);
     }
-  }, [UCT]);
+  }, [GMT]);
 
   return (
     <div className="clock">
@@ -94,8 +91,12 @@ const Clock: React.FC<{
           <span id="date-year">{year >= 10 ? year : `0${year}`}</span>
         </div>
         <div className="clock__location">
-          {location?.split(",")[0] ?? "Local"}
-          (GMT {UCT?.split(" ")[0] ?? ""})
+          {location?.split("-")[1] ?? "Local time "}
+          {GMT && (
+            <span className="clock__location-gmt">
+              (GMT {GMT})
+            </span>
+          )}
         </div>
       </div>
     </div>

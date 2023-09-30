@@ -1,0 +1,805 @@
+[
+  {
+    "value": "Afghanistan - Kabul | GMT +4.30",
+    "label": "Afghanistan - Kabul"
+  },
+  {
+    "value": "Albania - Tirane | GMT +1.00",
+    "label": "Albania - Tirane"
+  },
+  {
+    "value": "Algeria - Algiers | GMT +1.00",
+    "label": "Algeria - Algiers"
+  },
+  {
+    "value": "Andorra - Andorra La Vella | GMT +1.00",
+    "label": "Andorra - Andorra La Vella"
+  },
+  {
+    "value": "Angola - Luanda | GMT +1.00",
+    "label": "Angola - Luanda"
+  },
+  {
+    "value": "Antigue and Barbuda - Saint John's | GMT -4.00",
+    "label": "Antigue and Barbuda - Saint John's"
+  },
+  {
+    "value": "Argentina - Buenos Aires | GMT -3.00",
+    "label": "Argentina - Buenos Aires"
+  },
+  {
+    "value": "Armenia - Yerevan | GMT +4.00",
+    "label": "Armenia - Yerevan"
+  },
+  {
+    "value": "Australia - Australian Capital Territory - Canberra | GMT +10.00",
+    "label": "Australia - Australian Capital Territory - Canberra"
+  },
+  {
+    "value": "Austria - Vienna | GMT +1.00",
+    "label": "Austria - Vienna"
+  },
+  {
+    "value": "Azerbaijan - Baku | GMT +4.00",
+    "label": "Azerbaijan - Baku"
+  },
+
+  {
+    "value": "Bahamas - Nassau | GMT -5.00",
+    "label": "Bahamas - Nassau"
+  },
+  {
+    "value": "Bahrain - Al Manama | GMT +3.00",
+    "label": "Bahrain - Al Manama"
+  },
+  {
+    "value": "Bangladesh - Dhaka | GMT +6.00",
+    "label": "Bangladesh - Dhaka"
+  },
+  {
+    "value": "Barbados - Bridgetown | GMT -4.00",
+    "label": "Barbados - Bridgetown"
+  },
+  {
+    "value": "Belarus - Minsk | GMT +2.00",
+    "label": "Belarus - Minsk"
+  },
+  {
+    "value": "Belgium - Brussels | GMT +1.00",
+    "label": "Belgium - Brussels"
+  },
+  {
+    "value": "Belize - Belmopan | GMT -6.00",
+    "label": "Belize - Belmopan"
+  },
+  {
+    "value": "Benin - Porto Novo | GMT +1.00",
+    "label": "Benin - Porto Novo"
+  },
+  {
+    "value": "Bhutan - Thimphu | GMT +6.00",
+    "label": "Bhutan - Thimphu"
+  },
+  {
+    "value": "Bolivia - La Paz | GMT -4.00",
+    "label": "Bolivia - La Paz"
+  },
+  {
+    "value": "Bosnia - Herzegovina - Sarajevo | GMT +1.00",
+    "label": "Bosnia - Herzegovina - Sarajevo"
+  },
+  {
+    "value": "Botswana - Gaborone | GMT +2.00",
+    "label": "Botswana - Gaborone"
+  },
+  {
+    "value": "Brazil - Distrito Federal - Brasilia | GMT -3.00",
+    "label": "Brazil - Distrito Federal - Brasilia"
+  },
+  {
+    "value": "Brunei Darussalam - Bandar Seri Begawan | GMT +8.00",
+    "label": "Brunei Darussalam - Bandar Seri Begawan"
+  },
+  {
+    "value": "Bulgaria - Sofia | GMT +2.00",
+    "label": "Bulgaria - Sofia"
+  },
+  {
+    "value": "Burkina Faso - Ouagadougou | GMT 000",
+    "label": "Burkina Faso - Ouagadougou"
+  },
+  {
+    "value": "Burundi - Bujumbura | GMT +2.00",
+    "label": "Burundi - Bujumbura"
+  },
+
+  {
+    "value": "Cambodia - Phnom Penh | GMT +7.00",
+    "label": "Cambodia - Phnom Penh"
+  },
+  {
+    "value": "Cameroon - Yaounde | GMT +1.00",
+    "label": "Cameroon - Yaounde"
+  },
+  {
+    "value": "Canada - Ontario - Ottawa | GMT -5.00",
+    "label": "Canada - Ontario - Ottawa"
+  },
+  {
+    "value": "Cape Verde - Praia | GMT -1.00",
+    "label": "Cape Verde - Praia"
+  },
+  {
+    "value": "Central African Republic - Bangui | GMT +1.00",
+    "label": "Central African Republic - Bangui"
+  },
+  {
+    "value": "Chad - Ndjamena | GMT +1.00",
+    "label": "Chad - Ndjamena"
+  },
+  {
+    "value": "Chile - Santiago | GMT -4.00",
+    "label": "Chile - Santiago"
+  },
+  {
+    "value": "China - Beijing | GMT +8.00",
+    "label": "China - Beijing"
+  },
+  {
+    "value": "Colombia - Bogota | GMT -5.00",
+    "label": "Colombia - Bogota"
+  },
+  {
+    "value": "Comoros - Moroni | GMT +3.00",
+    "label": "Comoros - Moroni"
+  },
+  {
+    "value": "Congo - Brazzaville | GMT +1.00",
+    "label": "Congo - Brazzaville"
+  },
+  {
+    "value": "Congo Dem. Rep. - Kinshasa | GMT +1.00",
+    "label": "Congo Dem. Rep. - Kinshasa"
+  },
+  {
+    "value": "Cook Islands - Rarotonga | GMT -10.00",
+    "label": "Cook Islands - Rarotonga"
+  },
+  {
+    "value": "Costa Rica - San Jose | GMT -6.00",
+    "label": "Costa Rica - San Jose"
+  },
+  {
+    "value": "Cote D'Ivoire - Yamoussoukro | GMT 000",
+    "label": "Cote D'Ivoire - Yamoussoukro"
+  },
+  {
+    "value": "Croatia - Zagreb | GMT +1.00",
+    "label": "Croatia - Zagreb"
+  },
+  {
+    "value": "Cuba - Havanna | GMT -5.00",
+    "label": "Cuba - Havanna"
+  },
+  {
+    "value": "Cyprus - Nicosia | GMT +2.00",
+    "label": "Cyprus - Nicosia"
+  },
+  {
+    "value": "Czech Republic - Prague | GMT +1.00",
+    "label": "Czech Republic - Prague"
+  },
+
+  {
+    "value": "Denmark - Copenhagen | GMT +1.00",
+    "label": "Denmark - Copenhagen"
+  },
+  {
+    "value": "Djibouti - Djibouti | GMT +3.00",
+    "label": "Djibouti - Djibouti"
+  },
+  {
+    "value": "Dominica - Roseau | GMT -4.00",
+    "label": "Dominica - Roseau"
+  },
+  {
+    "value": "Dominican Republic - Santo Domingo | GMT -4.00",
+    "label": "Dominican Republic - Santo Domingo"
+  },
+
+  {
+    "value": "East Timor - Dili | GMT +9.00",
+    "label": "East Timor - Dili"
+  },
+  {
+    "value": "Ecuador - Quito | GMT -5.00",
+    "label": "Ecuador - Quito"
+  },
+  {
+    "value": "Eqypt - Cairo | GMT +2.00",
+    "label": "Eqypt - Cairo"
+  },
+  {
+    "value": "El Salvador - San Salvador | GMT -6.00",
+    "label": "El Salvador - San Salvador"
+  },
+  {
+    "value": "Equatorial Guinea - Malabo | GMT +1.00",
+    "label": "Equatorial Guinea - Malabo"
+  },
+  {
+    "value": "Eritrea - Asmera | GMT +3.00",
+    "label": "Eritrea - Asmera"
+  },
+  {
+    "value": "Estonia - Tallinn | GMT +2.00",
+    "label": "Estonia - Tallinn"
+  },
+  {
+    "value": "Ethiopia - Addis Ababa | GMT +3.00",
+    "label": "Ethiopia - Addis Ababa"
+  },
+
+  {
+    "value": "Fiji - Suva | GMT 000",
+    "label": "Fiji - Suva"
+  },
+  {
+    "value": "Finland - Helsinki | GMT +2.00",
+    "label": "Finland - Helsinki"
+  },
+  {
+    "value": "France - Paris | GMT +1.00",
+    "label": "France - Paris"
+  },
+
+  {
+    "value": "Gabon - Libreville | GMT +1.00",
+    "label": "Gabon - Libreville"
+  },
+  {
+    "value": "Gambia - Banjul | GMT 000",
+    "label": "Gambia - Banjul"
+  },
+  {
+    "value": "Georgia - Tbilisi | GMT +4.00",
+    "label": "Georgia - Tbilisi"
+  },
+  {
+    "value": "Germany - Berlin - Berlin | GMT +1.00",
+    "label": "Germany - Berlin - Berlin"
+  },
+  {
+    "value": "Ghana - Accra | GMT 000",
+    "label": "Ghana - Accra"
+  },
+  {
+    "value": "Greece - Athens | GMT +2.00",
+    "label": "Greece - Athens"
+  },
+  {
+    "value": "Grenada - Saint George's | GMT -4.00",
+    "label": "Grenada - Saint George's"
+  },
+  {
+    "value": "Guatemala - Guatemala | GMT -6.00",
+    "label": "Guatemala - Guatemala"
+  },
+  {
+    "value": "Guinea - Conakry | GMT 000",
+    "label": "Guinea - Conakry"
+  },
+  {
+    "value": "Guinea Bissau - Bissau | GMT 000",
+    "label": "Guinea Bissau - Bissau"
+  },
+  {
+    "value": "Guyana - Georgetown | GMT -4.00",
+    "label": "Guyana - Georgetown"
+  },
+
+  {
+    "value": "Haiti - Port-au-Prince | GMT -5.00",
+    "label": "Haiti - Port-au-Prince"
+  },
+  {
+    "value": "Honduras - Tegucigalpa | GMT -6.00",
+    "label": "Honduras - Tegucigalpa"
+  },
+  {
+    "value": "Hungary - Budapest | GMT +1.00",
+    "label": "Hungary - Budapest"
+  },
+
+  {
+    "value": "Iceland - Reykjavik | GMT 000",
+    "label": "Iceland - Reykjavik"
+  },
+  {
+    "value": "India - New Delhi | GMT +5.30",
+    "label": "India - New Delhi"
+  },
+  {
+    "value": "Indonesia - Java - Jakarta | GMT +7.00",
+    "label": "Indonesia - Java - Jakarta"
+  },
+  {
+    "value": "Iran - Tehran | GMT +3.30",
+    "label": "Iran - Tehran"
+  },
+  {
+    "value": "Iraq - Baghdad | GMT +3.00",
+    "label": "Iraq - Baghdad"
+  },
+  {
+    "value": "Ireland - Dublin | GMT 000",
+    "label": "Ireland - Dublin"
+  },
+  {
+    "value": "Isle of Man - Douglas | GMT 000",
+    "label": "Isle of Man - Douglas"
+  },
+  {
+    "value": "Israel - Jerusalem | GMT +2.00",
+    "label": "Israel - Jerusalem"
+  },
+  {
+    "value": "Italy - Rome | GMT +1.00",
+    "label": "Italy - Rome"
+  },
+
+  {
+    "value": "Jamaica - Kingston | GMT -5.00",
+    "label": "Jamaica - Kingston"
+  },
+  {
+    "value": "Japan - Tokyo | GMT +9.00",
+    "label": "Japan - Tokyo"
+  },
+  {
+    "value": "Jordan - Amman | GMT +2.00",
+    "label": "Jordan - Amman"
+  },
+
+  {
+    "value": "Kazakstan - Astana | GMT +6.00",
+    "label": "Kazakstan - Astana"
+  },
+  {
+    "value": "Kenya - Nairobi | GMT +3.00",
+    "label": "Kenya - Nairobi"
+  },
+  {
+    "value": "Kiribati - Tarawa | GMT +12.00",
+    "label": "Kiribati - Tarawa"
+  },
+  {
+    "value": "Kosovo - Pristina | GMT +1.00",
+    "label": "Kosovo - Pristina"
+  },
+  {
+    "value": "Kuwait - Kuwait City | GMT +3.00",
+    "label": "Kuwait - Kuwait City"
+  },
+  {
+    "value": "Kyrgyzstan - Bishkek | GMT +5.00",
+    "label": "Kyrgyzstan - Bishkek"
+  },
+
+  {
+    "value": "Laos - Vientiane | GMT +7.00",
+    "label": "Laos - Vientiane"
+  },
+  {
+    "value": "Latvia - Riga | GMT +2.00",
+    "label": "Latvia - Riga"
+  },
+  {
+    "value": "Lebanon - Beirut | GMT +2.00",
+    "label": "Lebanon - Beirut"
+  },
+  {
+    "value": "Lesotho - Maseru | GMT +2.00",
+    "label": "Lesotho - Maseru"
+  },
+  {
+    "value": "Liberia - Monrovia | GMT 000",
+    "label": "Liberia - Monrovia"
+  },
+  {
+    "value": "Libya - Tripoli | GMT +2.00",
+    "label": "Libya - Tripoli"
+  },
+  {
+    "value": "Liechtenstein - Vaduz | GMT +1.00",
+    "label": "Liechtenstein - Vaduz"
+  },
+  {
+    "value": "Lithuania - Vilnius | GMT +2.00",
+    "label": "Lithuania - Vilnius"
+  },
+  {
+    "value": "Luxembourg - Luxembourg | GMT +1.00",
+    "label": "Luxembourg - Luxembourg"
+  },
+
+  {
+    "value": "Macedonia - Skopje | GMT +1.00",
+    "label": "Macedonia - Skopje"
+  },
+  {
+    "value": "Madagascar - Antananarivo | GMT +3.00",
+    "label": "Madagascar - Antananarivo"
+  },
+  {
+    "value": "Malawi - Lilongwe | GMT +2.00",
+    "label": "Malawi - Lilongwe"
+  },
+  {
+    "value": "Malaysia - Kuala Lumpur | GMT +8.00",
+    "label": "Malaysia - Kuala Lumpur"
+  },
+  {
+    "value": "Mali - Bamako | GMT 000",
+    "label": "Mali - Bamako"
+  },
+  {
+    "value": "Malta - Valletta | GMT +1.00",
+    "label": "Malta - Valletta"
+  },
+  {
+    "value": "Mauritania - Nouakchott | GMT 000",
+    "label": "Mauritania - Nouakchott"
+  },
+  {
+    "value": "Mauritius - Port Louis | GMT +4.00",
+    "label": "Mauritius - Port Louis"
+  },
+  {
+    "value": "Mexico - Mexico City | GMT -6.00",
+    "label": "Mexico - Mexico City"
+  },
+  {
+    "value": "Moldova - Kishinev | GMT +2.00",
+    "label": "Moldova - Kishinev"
+  },
+  {
+    "value": "Monaco - Monaco | GMT +1.00",
+    "label": "Monaco - Monaco"
+  },
+  {
+    "value": "Mongolia - Ulaanbaatar | GMT +8.00",
+    "label": "Mongolia - Ulaanbaatar"
+  },
+  {
+    "value": "Morocco - Rabat | GMT 000",
+    "label": "Morocco - Rabat"
+  },
+  {
+    "value": "Mozambique - Maputto | GMT +2.00",
+    "label": "Mozambique - Maputto"
+  },
+  {
+    "value": "Myanmar - Rangoon | GMT +6.30",
+    "label": "Myanmar - Rangoon"
+  },
+
+  {
+    "value": "Namibia - Windhoek | GMT +1.00",
+    "label": "Namibia - Windhoek"
+  },
+  {
+    "value": "Nauru - Makwa | GMT +12.00",
+    "label": "Nauru - Makwa"
+  },
+  {
+    "value": "Nepal - Kathmandu | GMT +6.00",
+    "label": "Nepal - Kathmandu"
+  },
+  {
+    "value": "Netherlands - Amsterdam | GMT +1.00",
+    "label": "Netherlands - Amsterdam"
+  },
+  {
+    "value": "New Zealand - Wellington | GMT +12.00",
+    "label": "New Zealand - Wellington"
+  },
+  {
+    "value": "Nicaragua - Managua | GMT -6.00",
+    "label": "Nicaragua - Managua"
+  },
+  {
+    "value": "Niger - Niamey | GMT +1.00",
+    "label": "Niger - Niamey"
+  },
+  {
+    "value": "Nigeria - Abuja | GMT +1.00",
+    "label": "Nigeria - Abuja"
+  },
+  {
+    "value": "Niue - Alofi | GMT -11.00",
+    "label": "Niue - Alofi"
+  },
+  {
+    "value": "North Korea - Pyongyang | GMT +9.00",
+    "label": "North Korea - Pyongyang"
+  },
+  {
+    "value": "Norway - Oslo | GMT +1.00",
+    "label": "Norway - Oslo"
+  },
+
+  {
+    "value": "Oman - Muscat | GMT +4.00",
+    "label": "Oman - Muscat"
+  },
+
+  {
+    "value": "Pakistan - Islamabad | GMT +5.00",
+    "label": "Pakistan - Islamabad"
+  },
+  {
+    "value": "Palau - Koror | GMT +9.00",
+    "label": "Palau - Koror"
+  },
+  {
+    "value": "Panama - Panama | GMT -5.00",
+    "label": "Panama - Panama"
+  },
+  {
+    "value": "Papua New Guinea - Port Moresby | GMT +10.00",
+    "label": "Papua New Guinea - Port Moresby"
+  },
+  {
+    "value": "Paraguay - Asuncion | GMT -4.00",
+    "label": "Paraguay - Asuncion"
+  },
+  {
+    "value": "Peru - Lima | GMT -5.00",
+    "label": "Peru - Lima"
+  },
+  {
+    "value": "Philippines - Manilla | GMT +8.00",
+    "label": "Philippines - Manilla"
+  },
+  {
+    "value": "Poland - Warsaw | GMT +1.00",
+    "label": "Poland - Warsaw"
+  },
+  {
+    "value": "Portugal - Lisbon | GMT 000",
+    "label": "Portugal - Lisbon"
+  },
+  {
+    "value": "Puerto Rico - San Juan | GMT -4.00",
+    "label": "Puerto Rico - San Juan"
+  },
+
+  {
+    "value": "Qatar - Ad Dawhah | GMT +3.00",
+    "label": "Qatar - Ad Dawhah"
+  },
+
+  {
+    "value": "Reunion (French) - Saint - Denis | GMT +4.00",
+    "label": "Reunion (French) - Saint - Denis"
+  },
+  {
+    "value": "Romania - Bucharest | GMT +2.00",
+    "label": "Romania - Bucharest"
+  },
+  {
+    "value": "Russia - Moscow | GMT +3.00",
+    "label": "Russia - Moscow"
+  },
+  {
+    "value": "Rwanda - Kigali | GMT +2.00",
+    "label": "Rwanda - Kigali"
+  },
+
+  {
+    "value": "Saint Kitts & Nevis - Basseterre | GMT -4.00",
+    "label": "Saint Kitts & Nevis - Basseterre"
+  },
+  {
+    "value": "Saint Lucia - Castries | GMT -4.00",
+    "label": "Saint Lucia - Castries"
+  },
+  {
+    "value": "Saint Vincent & Grenadines - Kingstown | GMT -4.00",
+    "label": "Saint Vincent & Grenadines - Kingstown"
+  },
+  {
+    "value": "Samoa - Apia | GMT -11.00",
+    "label": "Samoa - Apia"
+  },
+  {
+    "value": "San Marino - San Marino | GMT +1.00",
+    "label": "San Marino - San Marino"
+  },
+  {
+    "value": "Sao Tome and Principe - Sao Tome | GMT 000",
+    "label": "Sao Tome and Principe - Sao Tome"
+  },
+  {
+    "value": "Saudi Arabia - Riyadh | GMT +3.00",
+    "label": "Saudi Arabia - Riyadh"
+  },
+  {
+    "value": "Senegal - Dakar | GMT 000",
+    "label": "Senegal - Dakar"
+  },
+  {
+    "value": "Seychelles - Victoria | GMT +4.00",
+    "label": "Seychelles - Victoria"
+  },
+  {
+    "value": "Sierra Leone - Freetown | GMT 000",
+    "label": "Sierra Leone - Freetown"
+  },
+  {
+    "value": "Singapore -Singapore | GMT +8.00",
+    "label": "Singapore -Singapore"
+  },
+  {
+    "value": "Slovak Republic - Bratislava | GMT +1.00",
+    "label": "Slovak Republic - Bratislava"
+  },
+  {
+    "value": "Slovenia - Ljubljana | GMT +1.00",
+    "label": "Slovenia - Ljubljana"
+  },
+  {
+    "value": "Solomon Islands - Hontara | GMT +11.00",
+    "label": "Solomon Islands - Hontara"
+  },
+  {
+    "value": "Somalia - Mogadishu | GMT +3.00",
+    "label": "Somalia - Mogadishu"
+  },
+  {
+    "value": "South Africa - Pretoria | GMT +2.00",
+    "label": "South Africa - Pretoria"
+  },
+  {
+    "value": "Spain - Madrid | GMT +1.00",
+    "label": "Spain - Madrid"
+  },
+  {
+    "value": "Sri Lanka - Colombo | GMT +6.00",
+    "label": "Sri Lanka - Colombo"
+  },
+  {
+    "value": "Sudan - Khartoum | GMT +3.00",
+    "label": "Sudan - Khartoum"
+  },
+  {
+    "value": "Suriname - Paramaribo | GMT -3.00",
+    "label": "Suriname - Paramaribo"
+  },
+  {
+    "value": "Swaziland - Mbabane | GMT +2.00",
+    "label": "Swaziland - Mbabane"
+  },
+  {
+    "value": "Sweden - Stockholm | GMT +1.00",
+    "label": "Sweden - Stockholm"
+  },
+  {
+    "value": "Switzerland - Bern | GMT +1.00",
+    "label": "Switzerland - Bern"
+  },
+  {
+    "value": "Syria - Damascus | GMT +2.00",
+    "label": "Syria - Damascus"
+  },
+
+  {
+    "value": "Taiwan - Taipei | GMT +8.00",
+    "label": "Taiwan - Taipei"
+  },
+  {
+    "value": "Tajikistan - Dushanbe | GMT +5.00",
+    "label": "Tajikistan - Dushanbe"
+  },
+  {
+    "value": "Tanzania - Dar es Salaam | GMT +3.00",
+    "label": "Tanzania - Dar es Salaam"
+  },
+  {
+    "value": "Thailand - Bangkok | GMT +7.00",
+    "label": "Thailand - Bangkok"
+  },
+  {
+    "value": "Togo - Lome | GMT 000",
+    "label": "Togo - Lome"
+  },
+  {
+    "value": "Tonga - Nukualofa | GMT +13.00",
+    "label": "Tonga - Nukualofa"
+  },
+  {
+    "value": "Trinidad and Tobago - Port of Spain | GMT -4.00",
+    "label": "Trinidad and Tobago - Port of Spain"
+  },
+  {
+    "value": "Tunisia - Tunis | GMT +1.00",
+    "label": "Tunisia - Tunis"
+  },
+  {
+    "value": "Turkey - Ankara | GMT +2.00",
+    "label": "Turkey - Ankara"
+  },
+  {
+    "value": "Turkmenistan - Ashgabat | GMT +5.00",
+    "label": "Turkmenistan - Ashgabat"
+  },
+  {
+    "value": "Tuvalu - Funafuti | GMT +2.00",
+    "label": "Tuvalu - Funafuti"
+  },
+
+  {
+    "value": "U.K. - England - London | GMT 000",
+    "label": "U.K. - England - London"
+  },
+  {
+    "value": "U.S.A. - Washington D.C | GMT -5.00",
+    "label": "U.S.A. - Washington D.C"
+  },
+  {
+    "value": "Uganda - Kampala | GMT +3.00",
+    "label": "Uganda - Kampala"
+  },
+  {
+    "value": "Ukraine - Kiev | GMT +2.00",
+    "label": "Ukraine - Kiev"
+  },
+  {
+    "value": "United Arab Emirates - Abu Dhabi | GMT +4.00",
+    "label": "United Arab Emirates - Abu Dhabi"
+  },
+  {
+    "value": "Uruguay - Montevideo | GMT -3.00",
+    "label": "Uruguay - Montevideo"
+  },
+  {
+    "value": "Uzbekistan - Tashkent | GMT +5.00",
+    "label": "Uzbekistan - Tashkent"
+  },
+
+  {
+    "value": "Vanuatu - Vila | GMT +11.00",
+    "label": "Vanuatu - Vila"
+  },
+  {
+    "value": "Vatican City State - Vatican City | GMT +1.00",
+    "label": "Vatican City State - Vatican City"
+  },
+  {
+    "value": "Venezuela - Caracas | GMT -4.00",
+    "label": "Venezuela - Caracas"
+  },
+  {
+    "value": "Vietnam - Hanoi [KSV] | GMT +7.00",
+    "label": "Vietnam - Hanoi [KSV]"
+  },
+
+  {
+    "value": "Yemen - Sana | GMT +3.00",
+    "label": "Yemen - Sana"
+  },
+  {
+    "value": "Yugoslavia - Serbia - Belgrade | GMT +1.00",
+    "label": "Yugoslavia - Serbia - Belgrade"
+  },
+
+  {
+    "value": "Zambia - Lusaka | GMT +2.00",
+    "label": "Zambia - Lusaka"
+  },
+  {
+    "value": "Zimbabwe - Harare | GMT +2.00",
+    "label": "Zimbabwe - Harare"
+  }
+]
