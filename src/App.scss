@@ -23,6 +23,10 @@ header {
     i {
       font-size: 2rem;
       color: var(--title-color);
+      transition: color 0.4s;
+      &:hover {
+        color: var(--first-color);
+      }
     }
   }
 }
