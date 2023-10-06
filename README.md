@@ -4,7 +4,7 @@
 
 This is a simple world clock application that allows the user to select a timezone and see the current time in that timezone. The user can also add a timezone to their favorites list and see the current time in their favorite timezones on the home screen. The user can also remove a timezone from their favorites list and search for a timezone by country or city name.
 
-Project have been using components clock in project [bedimcode/responsive-clock-ui](https://github.com/bedimcode/responsive-clock-ui).
+Component Clock have been used in project is forked from [bedimcode/responsive-clock-ui](https://github.com/bedimcode/responsive-clock-ui).
 
 ## Features
 
