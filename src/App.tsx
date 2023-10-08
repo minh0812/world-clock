@@ -160,6 +160,23 @@ function App() {
           ))}
         </div>
       </main>
+      <footer>
+        <p>
+          Made with{" "}
+          <span role="img" aria-label="love">
+            ❤️
+          </span>{" "}
+          by{" "}
+          <a
+            href="https://github.com/minh0812"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="author"
+          >
+            <span>Duy Minh</span>
+          </a>
+        </p>
+      </footer>
     </>
   );
 }
