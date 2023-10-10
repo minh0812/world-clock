@@ -32,7 +32,6 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 9rem);
   .search-location {
     width: 100%;
     margin: auto;
@@ -92,7 +91,7 @@ main {
 
 footer{
   text-align: center;
-  padding: 1rem;
+  padding: 0 0 1rem 0;
   font-size: var(--smaller-font-size);
   a {
     color: var(--text-color);
