@@ -26,7 +26,10 @@ const Clock: React.FC<{
     setMonth(date.toLocaleString("en-US", { month: "short" }));
     setYear(date.getFullYear());
     setGMTLocal(
-      date.toLocaleString("en-US", { timeZoneName: "short" }).split(" ")[3].replace("GMT", "GMT ")
+      date
+        .toLocaleString("en-US", { timeZoneName: "short" })
+        .split(" ")[3]
+        .replace("GMT", "GMT ")
     );
   };
 
@@ -53,6 +56,7 @@ const Clock: React.FC<{
       <Tooltip color="var(--first-color)" title="Remove clock" placement="top">
         <CloseCircleOutlined
           className="icon-close"
+          style={{ display: !GMT ? "none" : "" }}
           onClick={() => removeClock(location as string)}
         />
       </Tooltip>

@@ -119,11 +119,13 @@ function App() {
                     .replace(/[\u0300-\u036f]/g, "")
                 )
             }
-            filterSort={(optionA, optionB) =>
-              (optionA?.label ?? "")
-                .toLowerCase()
-                .localeCompare((optionB?.label ?? "").toLowerCase())
-            }
+            filterSort={(optionA, optionB) => {
+              const optionAValue =
+                optionA?.value?.split("GMT")[1].replace(":", ".") ?? "";
+              const optionBValue =
+                optionB?.value?.split("GMT")[1].replace(":", ".") ?? "";
+              return +optionAValue - +optionBValue;
+            }}
             onChange={(value) =>
               setGMT({
                 GMT: value?.split(" ").slice(-1)[0],
