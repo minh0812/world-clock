@@ -15,6 +15,7 @@ const Clock: React.FC<{
   const [day, setDay] = useState(1);
   const [month, setMonth] = useState("Jan");
   const [year, setYear] = useState(1);
+  const [GMTLocal, setGMTLocal] = useState("");
 
   const getTime = (date: Date) => {
     setHour(date.getHours() > 12 ? date.getHours() - 12 : date.getHours());
@@ -24,6 +25,9 @@ const Clock: React.FC<{
     setDay(date.getDate());
     setMonth(date.toLocaleString("en-US", { month: "short" }));
     setYear(date.getFullYear());
+    setGMTLocal(
+      date.toLocaleString("en-US", { timeZoneName: "short" }).split(" ")[3].replace("GMT", "GMT ")
+    );
   };
 
   useEffect(() => {
@@ -37,7 +41,7 @@ const Clock: React.FC<{
       const interval = setInterval(() => {
         const date = new Date();
         const UCT = date.getTime() + date.getTimezoneOffset() * 60000;
-        const newDate = new Date(UCT + 3600000 * +GMT);
+        const newDate = new Date(UCT + 3600000 * +GMT.replace(":", "."));
         getTime(newDate);
       }, 1000);
       return () => clearInterval(interval);
@@ -92,11 +96,9 @@ const Clock: React.FC<{
         </div>
         <div className="clock__location">
           {location?.split("-")[1] ?? "Local time "}
-          {GMT && (
-            <span className="clock__location-gmt">
-              (GMT {GMT})
-            </span>
-          )}
+          <span className="clock__location-gmt">
+            {GMT ? `GMT ${GMT}` : GMTLocal}
+          </span>
         </div>
       </div>
     </div>
